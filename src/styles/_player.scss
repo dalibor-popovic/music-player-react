@@ -1,0 +1,74 @@
+.player-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 30vh;
+}
+
+.player {
+  height: fit-content;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 100, 100);
+  border-radius: 3rem;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.time-control {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  input {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  p {
+    padding: 1rem;
+    color: #303030;
+  }
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  position: relative;
+
+  .icon-container {
+    width: 1.125rem;
+  }
+
+  .play-pause {
+    display: grid;
+    place-items: center;
+    height: 5rem;
+    width: 5rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    border-radius: 50%;
+    background: #4da890;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player {
+    width: 90vw;
+  }
+
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 90%;
+  }
+}
